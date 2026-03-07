@@ -6,16 +6,12 @@
     <title>Hira Nandhani M | Developer Portfolio</title>
     <meta name="description" content="Portfolio of Hira Nandhani M, a Computer Science Student and Aspiring Software Developer from Chennai, India.">
     
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23151a28%22/><text x=%2250%22 y=%2270%22 font-family=%22sans-serif%22 font-size=%2260%22 font-weight=%22bold%22 fill=%22%233b82f6%22 text-anchor=%22middle%22>H</text></svg>">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23151a28%22/><text x=%2250%22 y=%2270%22 font-family=%22sans-serif%22 font-size=%2260%22 font-weight=%22bold%22 fill=%22%233b82f6%22 text-anchor=%22middle%22>H</text></svg>">
 
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Google Fonts for modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -25,9 +21,10 @@
             <ul class="nav-links">
                 <li><a href="#home" class="nav-item">Home</a></li>
                 <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#education" class="nav-item">Education</a></li>
                 <li><a href="#skills" class="nav-item">Skills</a></li>
                 <li><a href="#projects" class="nav-item">Projects</a></li>
-                <li><a href="#education" class="nav-item">Education</a></li>
+                <li><a href="#certifications" class="nav-item">Certifications</a></li>
                 <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -39,7 +36,6 @@
     </header>
 
     <main>
-        <!-- Home / Hero Section -->
         <section id="home" class="hero-section">
             <div class="hero-content">
                 <p class="greeting">Hello, I'm</p>
@@ -50,7 +46,6 @@
                     <a href="#contact" class="btn primary-btn">Contact Me</a>
                     <a href="HIRA'S Resume.pdf" class="btn secondary-btn" id="download-resume"><i class="fas fa-download"></i> Download Resume</a>
                 </div>
-                <!-- Optional social links -->
                 <div class="social-links">
                     <a href="https://github.com/hira2737" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/hira2737/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -68,11 +63,7 @@
                         <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
     <span class="property">name</span>: <span class="string">"Hira Nandhani M"</span>,
     <span class="property">role</span>: <span class="string">"Software Developer"</span>,
-    <span class="property">skills</span>: [
-        <span class="string">"JavaScript"</span>, 
-        <span class="string">"Node.js"</span>, 
-        <span class="string">"MongoDB"</span>
-    ],
+    <span class="property">skills</span>: [<span class="string">"JavaScript"</span>, <span class="string">"Node.js"</span>, <span class="string">"MongoDB"</span>],
     <span class="function">isPassionate</span>: () => <span class="boolean">true</span>
 };</code></pre>
                     </div>
@@ -80,13 +71,12 @@
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="section">
             <h2 class="section-title">About Me</h2>
             <div class="about-content card hover-effect">
                 <div class="about-text">
                     <p>I am a Computer Science undergraduate with strong foundations in full-stack development and problem-solving. I am experienced in building web applications using JavaScript, Node.js, Express.js, and MongoDB.</p>
-                    <p>I am passionate about building scalable web applications and continuously learning modern technologies to improve my craft. I enjoy translating complex problems into elegant, well-structured, and performant code.</p>
+                    <p>I am passionate about building scalable web applications and continuously learning modern technologies to improve my craft.</p>
                 </div>
                 <div class="languages-spoken">
                     <h3><i class="fas fa-language"></i> Communication</h3>
@@ -98,7 +88,23 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-card card hover-effect timeline-item">
+                    <div class="edu-header">
+                        <h3>BSc Computer Science</h3>
+                        <span class="edu-year">2024 – 2027</span>
+                    </div>
+                    <p class="institution"><i class="fas fa-university"></i> M.O.P. Vaishnav College for Women</p>
+                    <div class="edu-details-tags">
+                        <span class="status-tag">Status: Second Year Student</span>
+                        <span class="cgpa-tag">CGPA: 9.3</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="skills" class="section">
             <h2 class="section-title">Skills Overview</h2>
             <div class="skills-container">
@@ -125,7 +131,7 @@
                 </div>
                 <div class="skill-category card hover-effect">
                     <div class="skill-icon"><i class="fas fa-tools"></i></div>
-                    <h3>Tools</h3>
+                    <h3>Tools Used</h3>
                     <div class="skill-tags">
                         <span>Git</span><span>GitHub</span><span>Netlify</span><span>Render</span>
                     </div>
@@ -133,7 +139,6 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="section">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-container">
@@ -149,17 +154,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- Additional project placeholder -->
-                <div class="project-card card hover-effect hidden-project" style="opacity: 0.6; border-style: dashed;">
+                <div class="project-card card hover-effect" style="border-style: dashed; opacity: 0.8;">
                     <div class="project-info">
                         <h3>More Projects Coming Soon</h3>
-                        <p>Currently working on new and exciting applications to showcase here.</p>
+                        <p>Currently working on new and exciting applications to showcase here. Stay tuned!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications & Achievements -->
         <section id="certifications" class="section">
             <div class="two-col-layout">
                 <div class="certifications-col">
@@ -206,31 +209,12 @@
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="education-timeline">
-                <div class="education-card card hover-effect timeline-item">
-                    <div class="edu-header">
-                        <h3>BSc Computer Science</h3>
-                        <span class="edu-year">2024 – 2027</span>
-                    </div>
-                    <p class="institution"><i class="fas fa-university"></i> M.O.P. Vaishnav College for Women</p>
-                    <div class="edu-details-tags">
-                        <span class="status-tag">Status: Second Year Student</span>
-                        <span class="cgpa-tag">CGPA: 9.3</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
         <section id="contact" class="section">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-container">
                 <div class="contact-info card">
                     <h3>Let's Connect</h3>
-                    <p>I'm currently looking for new opportunities, and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll get back to you!</p>
                     <div class="contact-methods">
                         <div class="method">
                             <i class="fas fa-envelope"></i>
