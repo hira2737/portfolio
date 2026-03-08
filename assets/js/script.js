@@ -99,3 +99,21 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 });
+// --- Mobile Menu Toggle Logic ---
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-item");
+
+// Toggle Menu when Hamburger is clicked
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("active"); // Animates hamburger if you have CSS for it
+});
+
+// Close Menu when a link is clicked (important for single-page sites)
+navItems.forEach(item => {
+    item.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
+    });
+});

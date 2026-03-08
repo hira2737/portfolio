@@ -794,3 +794,84 @@ footer {
         gap: 0.5rem;
     }
 }
+
+/* --- UNIVERSAL RESPONSIVE SYSTEM --- */
+
+/* 1. Base Fixes (Prevents horizontal scrolling) */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Tablet & Smaller Laptops (Max 1024px) */
+@media (max-width: 1024px) {
+    .section {
+        padding: 60px 5%;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+/* 3. Mobile Landscape & Tablets (Max 768px) */
+@media (max-width: 768px) {
+    /* Stack Hero: Image on top, Text below */
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    /* Navigation Menu Toggle */
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: #151a28; /* Match your background color */
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    /* Layout: Stack 2-column sections into 1 column */
+    .two-col-layout, .skills-container, .projects-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card, .skill-category, .project-card {
+        width: 100%;
+    }
+}
+
+/* 4. Small Phones (Max 480px) */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.2rem; /* Shrinks name so it fits on one line */
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .code-window {
+        font-size: 11px;
+        padding: 5px;
+    }
+}
